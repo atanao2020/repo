@@ -1,0 +1,66 @@
+<DOCTYPE html>
+<html>
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <script src="https://unpkg.com/axios/dist/axios.min.js"></script> 
+      <script src="./index.js" defer></script>
+      <title>Collection For My Favourite Books</title>
+      <style>
+          label{
+                font-weight: bold;
+                display: block;
+                width: 150px;
+                float: left;
+            }
+          form{
+              background-color: palevioletred;
+          }
+      </style>
+</head>
+<body>
+    <h1> Welcome to Ari's Book Collection </h1>
+
+    <h3>Add a new book</h3>
+    <form id ="new-album-form" method="post">
+        <div>
+        <label for="title">Book Title:</label>
+        <input type="text" id="title" name="book_title" required></input><br><br>
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="book_author" required></input><br><br>
+        <label for="year">Year Published:</label>
+        <input type="number" id="year" name="year_published" required></input><br><br>
+        <label for="edition">Edition:</label>
+        <input type="text" id="edition" name="book_edition" required></input>
+        </div><br><br>
+        <div class="button">
+        <button type="submit"> Submit </button>
+        </div>
+    </form><br><br>
+    
+
+<!-- ======================================================================== -->
+    <!-- <h2> My Favourite Star Wars Character is: </h2>
+    <div id="star-wars-favourite">         
+    </div> -->
+
+    <h2> List Of My Favourite Books </h2>
+    <div id='all-records-section' style ="background-color: gray;"></div><br><br>
+
+    <table style ="background-color: springgreen;">
+        <tr>
+            <td style="padding:5px">Book Title</td>
+            <td style="padding:5px">Author</td>
+            <td style="padding:5px">Year Published</td>
+            <td style="padding:5px">Edition</td>
+        </tr>
+    </table>
+
+    <!---->
+    <!-- <div>
+    <h2> Books Retrieved from Data </h2>
+    </div>
+    <div id="our-api-data">         
+    </div> -->
+</body>
+</html>
